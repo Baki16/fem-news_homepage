@@ -123,7 +123,7 @@ select {
 .container {
   padding-inline: 2em;
   margin-inline: auto;
-  max-width: 80em;
+  max-width: 90em;
 }
 
 .sr-only {
@@ -143,12 +143,63 @@ select {
   place-items: center;
   padding-inline: 1rem;
   padding-bottom: 4rem;
+  max-width: 90em;
 }
 .grid-container img{
   max-width: 90vw;
 }
 .grid-container p:not([class]) {
   max-width: 50ch;
+}
+@media (min-width: 45em) {
+  :root{
+    --fs-800: 3.5rem;
+  }
+  .grid-container {
+    margin:auto;
+    align-items: start;
+      text-align: left;
+      column-gap: var(--container-gap, 1.5rem);
+      grid-template-columns: repeat(3, calc(30em - 2rem));
+      /* grid-template-columns: 70vh 30vh; */
+      grid-template-areas: 
+      'content content sidebar'
+      'news news news'
+      ;
+  }
+  .grid-container > .content{
+  grid-area: content;
+  margin: 0;
+  }
+  .content > img{
+    content: url('./assets/images/image-web-3-desktop.jpg');
+    width: 100%;
+  }
+  .content > .main-text{
+    flex-direction: row;
+  } 
+  .main-text > *{
+    width: 50%;
+  }
+  .main-text > h1{
+    font-size: var(--fs-800);
+  }
+  .main-text > div  {
+    justify-content: space-between;
+  }
+  .main-text  .call-to-action {
+    width: 13.37rem;
+  }
+.grid-container > .sidebar{
+  grid-area: sidebar;
+  height: 100%;
+}
+.grid-container > .news-list{
+  margin-top: 4rem;
+  grid-area: news;
+  flex-direction: row;
+}
+
 }
 .underline{
   padding-bottom: 2rem;
@@ -239,7 +290,7 @@ select {
 /* ------------------- */
 
 .logo {
-  margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
+  margin: 1.5rem 0;
 }
 
 .primary-header {

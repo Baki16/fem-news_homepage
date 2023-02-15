@@ -25,44 +25,47 @@
   </head>
   <body class="home">
     <div class="overlay"></div>
-    <header class="container">
-      <header class="primary-header flex">
-        <div>
-          <img src="./assets/images/logo.svg" alt="blog logo" class="logo" />
-        </div>
-        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
-          <span class="sr-only" aria-expanded="false">Menu</span>
-        </button>
-        <nav>
-          <ul
-            id="primary-navigation"
-            data-visible="false"
-            class="primary-navigation flex"
-          >
-            <li class="active">
-              <a class="text-gray-dark fw-400" href="index.html">Home</a>
-            </li>
-            <li><a class="text-gray-dark fw-400" href="#">New</a></li>
-            <li><a class="text-gray-dark fw-400" href="#">Crew</a></li>
-            <li><a class="text-gray-dark fw-400" href="#">Trending</a></li>
-            <li><a class="text-gray-dark fw-400" href="#">Categories</a></li>
-          </ul>
-        </nav>
-      </header>
+
+    <header class="primary-header flex container">
+      <div>
+        <img src="./assets/images/logo.svg" alt="blog logo" class="logo" />
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span class="sr-only" aria-expanded="false">Menu</span>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="primary-navigation flex"
+        >
+          <li class="active">
+            <a class="text-gray-dark fw-400" href="index.html">Home</a>
+          </li>
+          <li><a class="text-gray-dark fw-400" href="#">New</a></li>
+          <li><a class="text-gray-dark fw-400" href="#">Crew</a></li>
+          <li><a class="text-gray-dark fw-400" href="#">Trending</a></li>
+          <li><a class="text-gray-dark fw-400" href="#">Categories</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="grid-container flow" style="--folw-space: 3rem">
       <!-- Main content of page -->
       <article class="content flow">
         <img src="./assets/images/image-web-3-mobile.jpg" alt="web 3 image" />
-        <h1 class="fs-800 text-dark fw-800">The Bright Future of Web 3.0?</h1>
-        <p class="">
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-        <button class="call-to-action text-white bg-red fw-400">
-          Read more
-        </button>
+        <div class="main-text flex flex-col">
+          <h1 class="fs-800 text-dark fw-800">The Bright Future of Web 3.0?</h1>
+          <div class="flex flex-col">
+            <p class="m-y-1">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button class="call-to-action text-white bg-red fw-400">
+              Read more
+            </button>
+          </div>
+        </div>
       </article>
       <div class="sidebar bg-dark">
         <h2 class="sidebar-headline text-orange fs-700 fw-700">New</h2>
