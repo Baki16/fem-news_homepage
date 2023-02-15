@@ -23,63 +23,114 @@
     <link rel="stylesheet" href="./index.css" />
     <script src="./js/navigarion.js" defer></script>
   </head>
-  <body>
-    <main class="container">
-      <div class="overlay"></div>
-      <header>
-        <header class="primary-header flex">
-          <div>
-            <img src="./assets/images/logo.svg" alt="blog logo" class="logo">
-          </div>
-          <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
-          <nav>
-              <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-                  <li class="active"><a class="text-gray fw-400 " href="index.html">Home</a>
-                  <li><a class="text-gray fw-400" href="#">New</a>
-                  <li><a class="text-gray fw-400" href="#">Crew</a>
-                  <li><a class="text-gray fw-400" href="#">Trending</a>
-                  <li><a class="text-gray fw-400" href="#">Categories</a>
-
-              </ul>
-          </nav>
-        </header>
+  <body class="home">
+    <div class="overlay"></div>
+    <header class="container">
+      <header class="primary-header flex">
+        <div>
+          <img src="./assets/images/logo.svg" alt="blog logo" class="logo" />
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+          <span class="sr-only" aria-expanded="false">Menu</span>
+        </button>
+        <nav>
+          <ul
+            id="primary-navigation"
+            data-visible="false"
+            class="primary-navigation flex"
+          >
+            <li class="active">
+              <a class="text-gray-dark fw-400" href="index.html">Home</a>
+            </li>
+            <li><a class="text-gray-dark fw-400" href="#">New</a></li>
+            <li><a class="text-gray-dark fw-400" href="#">Crew</a></li>
+            <li><a class="text-gray-dark fw-400" href="#">Trending</a></li>
+            <li><a class="text-gray-dark fw-400" href="#">Categories</a></li>
+          </ul>
+        </nav>
       </header>
-
+    </header>
+    <main class="grid-container flow" style="--folw-space: 3rem">
+      <!-- Main content of page -->
+      <article class="content flow">
+        <img src="./assets/images/image-web-3-mobile.jpg" alt="web 3 image" />
+        <h1 class="fs-800 text-dark fw-800">The Bright Future of Web 3.0?</h1>
+        <p class="">
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
+        </p>
+        <button class="call-to-action text-white bg-red fw-400">
+          Read more
+        </button>
+      </article>
+      <div class="sidebar bg-dark">
+        <h2 class="sidebar-headline text-orange fs-700 fw-700">New</h2>
+        <ul class="list-none flow">
+          <li class="underline">
+            <h3 class="text-white fs-600 fw-400 m-y-1">
+              Hydrogen VS Electric Cars
+            </h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </li>
+          <li class="underline">
+            <h3 class="text-white fs-600 fw-400 m-y-1">
+              The Downsides of AI Artistry
+            </h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </li>
+          <li>
+            <h3 class="text-white fs-600 fw-400 m-y-1">
+              Is VC Funding Drying Up?
+            </h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <ul class="news-list list-none flex flex-col">
+        <li class="news-post flex">
+          <img
+            src="./assets/images/image-retro-pcs.jpg"
+            alt="post image"
+            class="post-image"
+          />
+          <div class="flex flex-col">
+            <h2 class="post-number">01</h2>
+            <h4 class="post-title text-dark fs-500">Reviving Retro PCs</h4>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </li>
+        <li class="news-post flex">
+          <img
+            src="/assets/images/image-top-laptops.jpg"
+            alt="post-image"
+            class="post-image"
+          />
+          <div class="flex flex-col">
+            <h2 class="post-number">02</h2>
+            <h4 class="post-title text-dark fs-500">Top 10 Laptops of 2022</h4>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </li>
+        <li class="news-post flex">
+          <img
+            src="./assets/images/image-gaming-growth.jpg"
+            alt=""
+            class="post-image"
+          />
+          <div class="flex flex-col">
+            <h2 class="post-number fs-600">03</h2>
+            <h4 class="post-title text-dark fs-500">The Growth of Gaming</h4>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </li>
+      </ul>
     </main>
-    <!-- Home
-  New
-  
-  
-  
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities. -->
   </body>
 </html>

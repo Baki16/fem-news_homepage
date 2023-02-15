@@ -12,7 +12,7 @@
   /* Font */
   --ff-inter: "Inter", sans-serif;
   /* Font size */
-  --fs-800: 3.5rem;
+  --fs-800: 3rem;
   --fs-700: 2.5rem;
   --fs-600: 1.5rem;
   --fs-500: 1.25rem;
@@ -59,7 +59,7 @@ body {
   font-family: var(--ff-inter);
   font-size: var(--fs-400);
   background-color: hsl(var(--clr-off-white));
-  color: hsl(var(--clr-gray-blue));
+  color: hsl(var(--clr-dark-gray-blue));
 }
 /* Make form elements easier to work with */
 input,
@@ -90,6 +90,9 @@ select {
   display: flex;
   gap: var(--gap, 1rem);
 }
+.flex-col{
+  flex-direction: column;
+}
 
 .grid {
   display: grid;
@@ -99,18 +102,28 @@ select {
 .d-block {
   display: block;
 }
+.list-none{
+  list-style: none;
+  padding: 0;
+}
 
-.flow > *:where(:not(:first-child)) {
+.flow > *{
   margin-top: var(--flow-space, 1rem);
 }
 .flow--space-small {
   --flow-space: 0.5rem;
 }
+.m-x-1{
+  margin-inline: 1rem;
+}
+.m-y-1{
+  margin: 1rem 0;
+}
 
 .container {
   padding-inline: 2em;
   margin-inline: auto;
-  max-width: 80rem;
+  max-width: 80em;
 }
 
 .sr-only {
@@ -124,6 +137,24 @@ select {
   white-space: nowrap; /* added line */
   border: 0;
 }
+.grid-container {
+  text-align: left;
+  display: grid;
+  place-items: center;
+  padding-inline: 1rem;
+  padding-bottom: 4rem;
+}
+.grid-container img{
+  max-width: 90vw;
+}
+.grid-container p:not([class]) {
+  max-width: 50ch;
+}
+.underline{
+  padding-bottom: 2rem;
+  border-bottom: 1px solid hsl(var(--clr-gray-blue));
+}
+
 /* Typthography */
 .ff-inter {
   font-family: var(--ff-inter);
@@ -160,6 +191,9 @@ select {
 .bg-red {
   background-color: hsl(var(--clr-soft-red));
 }
+.text-orange{
+  color: hsl(var(--clr-soft-orange));
+}
 .text-gray {
   color: hsl(var(--clr-gray-blue));
 }
@@ -172,9 +206,7 @@ select {
 .text-white {
   color: hsl(var(--clr-off-white));
 }
-/* ------------------- */
-/* Home         */
-/* ------------------- */
+/* Components */
 .overlay{
   position: absolute;
   top: 0;
@@ -189,6 +221,23 @@ select {
 .overlay.active{
   bottom: 0;
 }
+.call-to-action{
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  border: none;
+}
+.sidebar{
+  padding: 1rem 2rem;
+}
+.sidebar > .sidebar-headline{
+  margin-bottom: 2rem;
+}
+
+/* ------------------- */
+/* Home         */
+/* ------------------- */
+
 .logo {
   margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
 }
@@ -261,4 +310,11 @@ select {
       outline-offset: 5px;
   }
   
+}
+.news-post > div{
+  justify-content: space-between;
+}
+.post-image{
+  width: 6.25rem;
+  height: 7.81rem;
 }
