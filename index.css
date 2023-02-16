@@ -146,7 +146,6 @@ select {
   place-items: center;
   padding-inline: 1rem;
   padding-bottom: 4rem;
-  max-width: 90em;
 }
 .grid-container img {
   max-width: 90vw;
@@ -159,12 +158,12 @@ select {
     --fs-800: 3.5rem;
   }
   .grid-container {
-    max-width: 90em;
+    max-width: 80em !important;
     margin-inline: auto;
     align-items: start;
     text-align: left;
     column-gap: var(--container-gap, 1.5rem);
-    grid-template-columns: min(33vw, 30em) min(33vw, 30em) min(33vw, 30em);
+    grid-template-columns: min(33vw, 25.6em) min(33vw, 25.6em) min(33vw, 25.6em);
     /* grid-template-columns: 70vh 30vh; */
     grid-template-areas:
       "content content sidebar"
@@ -198,6 +197,7 @@ select {
   .grid-container > .sidebar {
     grid-area: sidebar;
     height: 100%;
+    width: 100%;
   }
   .grid-container > .news-list {
     margin-top: 4rem;
