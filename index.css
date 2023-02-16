@@ -164,7 +164,7 @@ select {
     align-items: start;
     text-align: left;
     column-gap: var(--container-gap, 1.5rem);
-    grid-template-columns: repeat(3, calc(33vw - 2rem));
+    grid-template-columns: min(33vw, 30em) min(33vw, 30em) min(33vw, 30em);
     /* grid-template-columns: 70vh 30vh; */
     grid-template-areas:
       "content content sidebar"
